@@ -1,0 +1,58 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 20
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.15
+      Frames:
+        All Enabled: false
+        base_link:
+          Value: true
+        tool0:
+          Value: true
+        gripper1_tcp:
+          Value: true
+    - Class: rviz_default_plugins/Pose
+      Name: TCP controlador (tool0)
+      Enabled: true
+      Topic:
+        Value: /irb120/tcp_pose_controller
+      Shape: Axes
+      Axes Length: 0.08
+      Axes Radius: 0.006
+    - Class: rviz_default_plugins/Pose
+      Name: TCP modelo propio (tool0)
+      Enabled: true
+      Topic:
+        Value: /irb120/tcp_pose_own
+      Shape: Arrow
+      Color: 255; 25; 0
+  Global Options:
+    Fixed Frame: base_link
+    Background Color: 48; 48; 48
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.6
+      Focal Point:
+        X: 0.2
+        Y: 0
+        Z: 0.3
+      Pitch: 0.4
+      Yaw: 0.8
