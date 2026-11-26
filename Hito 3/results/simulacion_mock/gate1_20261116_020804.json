@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:8080",
+  "inicio": "20261116_020804",
+  "lecturas": 25,
+  "validas": 25,
+  "tasa_validas": 1.0,
+  "latencia_media_ms": 5.122966766357422,
+  "latencia_p95_ms": 8.463382720947266,
+  "estados_observados": [
+    [
+      "MANR",
+      "motoron",
+      "running"
+    ]
+  ],
+  "primer_error": null,
+  "aceptado": true,
+  "csv": "gate1_20261116_020804.csv"
+}

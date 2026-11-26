@@ -1,0 +1,7 @@
+mov,tipo,rama_IK,salto_max_deg,duracion_s,e_p_llegada_mm,e_R_llegada_deg,error_max_eje_deg,DONE_vs_RWS_deg,modelo_vs_controlador
+1,Ejes (FK),-,5.0,3.5,0.008,0.0014,0.0011,0.050,"e_p = 0.000 mm, e_R = 0.000 deg"
+2,Ejes (FK),-,10.0,5.7,0.002,0.0004,0.0002,0.050,"e_p = 0.001 mm, e_R = 0.000 deg"
+3,Pose (IK),front/up/flip,6.9,1.7,0.024,0.0039,0.0066,0.144,"e_p = 0.005 mm, e_R = 0.001 deg"
+4,Pose (IK),front/up/noflip,6.9,1.6,0.026,0.0023,0.0065,0.134,"e_p = 0.002 mm, e_R = 0.001 deg"
+5,Pose (IK),front/up/flip,19.0,40.3,0.056,0.0131,0.0086,0.083,"e_p = 0.002 mm, e_R = 0.000 deg"
+6,Pose (IK),front/up/flip,14.5,4.8,0.042,0.0035,0.0110,0.103,"e_p = 0.002 mm, e_R = 0.000 deg"

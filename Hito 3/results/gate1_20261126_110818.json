@@ -1,0 +1,29 @@
+{
+  "url": "http://192.168.125.1",
+  "inicio": "20261126_110818",
+  "lecturas": 81,
+  "validas": 81,
+  "tasa_validas": 1.0,
+  "latencia_media_ms": 229.21484193684142,
+  "latencia_p95_ms": 1010.8015537261963,
+  "estados_observados": [
+    [
+      "MANR",
+      "guardstop",
+      "stopped"
+    ],
+    [
+      "MANR",
+      "motoroff",
+      "stopped"
+    ],
+    [
+      "MANR",
+      "motoron",
+      "stopped"
+    ]
+  ],
+  "primer_error": null,
+  "aceptado": true,
+  "csv": "gate1_20261126_110818.csv"
+}

@@ -1,0 +1,79 @@
+### ros2 topic hz /joint_states
+average rate: 9.992
+	min: 0.099s max: 0.101s std dev: 0.00050s window: 11
+average rate: 9.990
+### /irb120/fk_error
+layout:
+  dim: []
+  data_offset: 0
+data:
+- 5.522811907274805e-08
+- 2.6475129751956747e-08
+---
+### send_goal --joints 10 10 -10 0 40 0
+[INFO] [1794809304.030774856] [send_goal]: objetivo articular: q = [10.0, 10.0, -10.0, 0.0, 40.0, 0.0] deg
+{
+  "ok": true,
+  "objetivo_deg": [
+    10.0,
+    10.0,
+    -10.0,
+    0.0,
+    40.0,
+    0.0
+  ],
+  "alcanzado_deg": [
+    10.0,
+    10.0,
+    -10.0,
+    0.0,
+    40.0,
+    0.0
+  ],
+  "error": null,
+  "duracion_s": 0.267
+}
+### send_goal --xyz 0.35 0.10 0.25
+[INFO] [1794809305.307082484] [send_goal]: IK propia, rama front/up/noflip: q = [15.95, 12.97, 11.92, 0.0, 65.11, 15.95] deg
+{
+  "ok": true,
+  "objetivo_deg": [
+    15.945395900922861,
+    12.969291413091463,
+    11.921775932867977,
+    0.0,
+    65.10893265404059,
+    15.945395900922861
+  ],
+  "alcanzado_deg": [
+    15.95,
+    12.97,
+    11.92,
+    0.0,
+    65.11,
+    15.95
+  ],
+  "error": null,
+  "duracion_s": 0.648
+}
+### send_goal --joints 80 0 0 0 30 0
+[INFO] [1794809309.242787826] [send_goal]: objetivo articular: q = [80.0, 0.0, 0.0, 0.0, 30.0, 0.0] deg
+{
+  "ok": false,
+  "objetivo_deg": [
+    80.0,
+    0.0,
+    0.0,
+    0.0,
+    29.999999999999996,
+    0.0
+  ],
+  "alcanzado_deg": null,
+  "error": "rechazado por el cliente: J1: salto 64.0 > 45 deg",
+  "duracion_s": 0.002
+}
+### tf base_link -> gripper1_tcp
+At time 1794809310.734719837
+- Translation: [0.350, 0.100, 0.250]
+- Rotation: in Quaternion (xyzw) [0.000, 1.000, -0.000, 0.000]
+- Rotation: in RPY (radian) [-3.142, 0.000, 3.142]

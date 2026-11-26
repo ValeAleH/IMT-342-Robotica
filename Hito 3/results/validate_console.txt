@@ -1,0 +1,17 @@
+Modelo: irb120_model.py@9580df66b0
+Referencia: pinocchio-4.1.0+irb120_3_58_gripper1.urdf@311404f2c1
+
+case_id                tipo     e_p [m]  e_R [rad]        e_J  rango  resultado
+FK_N1                  FK     1.967e-17  0.000e+00                    pass
+FK_N2                  FK     7.850e-17  0.000e+00                    pass
+FK_HOME                FK     1.234e-17  0.000e+00                    pass
+FK_MC5000              FK     4.611e-16  3.650e-08                    pass
+IK_1                   IK     2.604e-16  2.107e-08                    pass
+IK_2_tablero           IK     2.498e-16  0.000e+00                    pass
+J_N1                   J                            3.224e-16    6/6  pass
+SING_MUNECA            SING                         2.525e-16    5/5  pass
+SING_MUNECA_EXACTA     SING                         3.975e-16    5/5  pass
+SING_CODO              SING                         1.729e-16    5/5  pass
+SING_HOMBRO            SING                         3.522e-16    5/5  pass
+
+tau_ext = J^T F (3 kg en TCP) [N m]: [0.0, 16.5197, 13.1615, -3.0852, 3.2266, 0.0]

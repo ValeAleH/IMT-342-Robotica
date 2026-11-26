@@ -1,0 +1,27 @@
+{
+  "url": "http://192.168.125.1",
+  "inicio": "20261126_104256",
+  "lecturas": 62,
+  "validas": 0,
+  "tasa_validas": 0.0,
+  "latencia_media_ms": 382.9428457444714,
+  "latencia_p95_ms": 1072.9832649230957,
+  "estados_observados": [
+    [
+      "MANR",
+      "guardstop",
+      "stopped"
+    ],
+    [
+      "MANR",
+      "motoron",
+      "stopped"
+    ]
+  ],
+  "primer_error": {
+    "joints": "HTTPError('400 Client Error: Bad Request for url: http://192.168.125.1/rw/rapid/tasks/T_ROB1/motion?resource=jointtarget&json=1')",
+    "tcp": "HTTPError('400 Client Error: Bad Request for url: http://192.168.125.1/rw/motionsystem/mechunits/ROB_1/robtarget?tool=tool0&wobj=wobj0&coordinate=Base&json=1')"
+  },
+  "aceptado": false,
+  "csv": "gate1_20261126_104256.csv"
+}

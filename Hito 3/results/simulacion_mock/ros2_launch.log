@@ -1,0 +1,43 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-11-16-02-08-10-241753-vm-4084
+[INFO] [launch]: Default logging verbosity is set to INFO
+/opt/mm/envs/ros/lib/python3.12/site-packages/launch/conditions/launch_configuration_equals.py:53: UserWarning: The 'LaunchConfigurationEquals' and 'LaunchConfigurationNotEquals' Conditions are  deprecated. Use the 'EqualsSubstitution' and 'NotEqualsSubstitution' substitutions instead! E.g.:
+  IfCondition(
+  	EqualsSubstitution(LaunchConfiguration('some_launch_arg'), "some_equality_check")
+  )
+  warnings.warn(
+[INFO] [robot_state_publisher-1]: process started with pid [4092]
+[INFO] [rws_state_node-2]: process started with pid [4095]
+[INFO] [fk_monitor_node-3]: process started with pid [4098]
+[INFO] [socket_command_node-4]: process started with pid [4102]
+[robot_state_publisher-1] [WARN] [1794809290.310995428] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[robot_state_publisher-1] [WARN] [1794809290.311626743] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[robot_state_publisher-1] [WARN] [1794809290.341325786] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-1] [INFO] [1794809290.341836659] [robot_state_publisher]: Robot initialized
+[rws_state_node-2] [WARN] [1794809290.535923538] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[rws_state_node-2] [WARN] [1794809290.536381174] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[rws_state_node-2] [INFO] [1794809290.634728874] [rws_state_node]: leyendo RWS en http://127.0.0.1:8080 a 10.0 Hz (solo GET)
+[socket_command_node-4] [WARN] [1794809290.640064912] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[socket_command_node-4] [WARN] [1794809290.640079699] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[socket_command_node-4] [INFO] [1794809290.701786520] [socket_command_node]: esperando objetivos en /irb120/joint_goal -> 127.0.0.1:1025
+[fk_monitor_node-3] [WARN] [1794809290.702426872] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[fk_monitor_node-3] [WARN] [1794809290.702743631] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[fk_monitor_node-3] [INFO] [1794809290.801757981] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809292.896829757] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809294.900130938] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809296.912213364] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809298.912710269] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809300.916507906] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809302.924668935] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[socket_command_node-4] [INFO] [1794809304.034668636] [socket_command_node]: conectado al servidor RAPID: OK SPD 50
+[socket_command_node-4] [INFO] [1794809304.035110036] [socket_command_node]: MOVJ [10.0, 10.0, -10.0, 0.0, 40.0, 0.0] deg
+[socket_command_node-4] [INFO] [1794809304.299450051] [socket_command_node]: {"ok": true, "objetivo_deg": [10.0, 10.0, -10.0, 0.0, 40.0, 0.0], "alcanzado_deg": [10.0, 10.0, -10.0, 0.0, 40.0, 0.0], "error": null, "duracion_s": 0.267}
+[fk_monitor_node-3] [INFO] [1794809305.024102571] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[socket_command_node-4] [INFO] [1794809305.309255956] [socket_command_node]: MOVJ [15.95, 12.97, 11.92, 0.0, 65.11, 15.95] deg
+[socket_command_node-4] [INFO] [1794809305.957515362] [socket_command_node]: {"ok": true, "objetivo_deg": [15.945395900922861, 12.969291413091463, 11.921775932867977, 0.0, 65.10893265404059, 15.945395900922861], "alcanzado_deg": [15.95, 12.97, 11.92, 0.0, 65.11, 15.95], "error": null, "duracion_s": 0.648}
+[fk_monitor_node-3] [INFO] [1794809307.028545032] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809309.033537067] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[socket_command_node-4] [INFO] [1794809309.336127584] [socket_command_node]: MOVJ [80.0, 0.0, 0.0, 0.0, 30.0, 0.0] deg
+[socket_command_node-4] [ERROR] [1794809309.337351227] [socket_command_node]: {"ok": false, "objetivo_deg": [80.0, 0.0, 0.0, 0.0, 29.999999999999996, 0.0], "alcanzado_deg": null, "error": "rechazado por el cliente: J1: salto 64.0 > 45 deg", "duracion_s": 0.002}
+[fk_monitor_node-3] [INFO] [1794809311.038762232] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809313.041936597] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
+[fk_monitor_node-3] [INFO] [1794809315.046212500] [fk_monitor_node]: e_p = 0.000 mm   e_R = 0.0000 deg
