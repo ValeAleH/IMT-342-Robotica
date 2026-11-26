@@ -1,0 +1,2 @@
+45f4769d826cf3ac62a65495f2db67b78b0c81df
+https://github.com/ros-industrial/abb  (abb_irb120_support)
