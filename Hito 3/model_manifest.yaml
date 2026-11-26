@@ -1,0 +1,47 @@
+# model_manifest.yaml - IMT-342 Hito 3 (ECI-3/4). Campos sin evidencia = null / unverified.
+robot_model: ABB_IRB120-3/0.6            # placa: serie 120-101516, fabricado 2018-01-10 (foto BIT-001)
+controller_model: IRC5_Compact           # inferido: etiqueta 30 kg + placa principal (X2 Service, LAN1-3, WAN, AXC)
+robotware_version: "6.12"                # confirmado por V. Hoyos el 24-11-2026 (FlexPendant > System Info); confirma H6 (RobotWare 6.x, RWS 1.0)
+controller_options_verified:             # FlexPendant > System Info > Control module > Options (foto BIT-002)
+  - 616-1 PC Interface
+  - 623-1 Multitasking
+  - 689-1 Externally Guided Motion (EGM)
+  - 628-1 Sensor Interface
+  - 687-1 Advanced Robot Motion
+  - 613-1 Collision Detection
+  - 608-1 World Zones
+  - 611-1 Path Recovery
+  - 612-1 Path Offset
+  - 610-1 Independent Axis
+  - 614-1 FTP SFTP and NFS client
+  - 617-1 FlexPendant Interface
+  - 709-1 DeviceNet Master/Slave
+  - 885-1 SoftMove
+  - UDPUC Driver
+controller_rapid_modules_observed: [Module1 (proyecto ajedrez, cliente socket a 192.168.125.203), EGM_ROS (sin revisar), CalibData]
+network:
+  pc_port: X2 Service                    # cable del PC en el puerto de servicio
+  controller_ip_service: 192.168.125.1
+  pc_ip: null                            # PENDIENTE (DHCP del puerto de servicio o fija; ajedrez usaba .203)
+ros_distribution: humble                 # objetivo (WSL2 Ubuntu 22.04); probado tambien en jazzy
+operating_system: Windows 11 + WSL2 Ubuntu 22.04   # objetivo; PENDIENTE confirmar version de Windows (22H2+ para red mirrored)
+kinematics_reference: ROS-Industrial abb_irb120_support (irb120_3_58), evaluado con Pinocchio y con parser URDF propio
+urdf_source_commit: 45f4769d826cf3ac62a65495f2db67b78b0c81df   # github.com/ros-industrial/abb
+base_frame: base_link                    # = base del IRC5 (wobj0 sin desplazamiento de world)
+tcp_frame: tool0                         # brida; TCP de trabajo: gripper1_tcp
+tcp_tooldata:
+  Gripper1:
+    tframe_trans_mm: [0, 0, 167.5]       # foto BIT-002 (Program Data > tooldata)
+    tframe_rot: unverified               # se asume [1,0,0,0]
+    load: unverified
+    module: CalibData
+joint_order: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]   # = rax_1..rax_6
+joint_limits_deg:
+  nominal: {min: [-165, -110, -110, -160, -120, -400], max: [165, 110, 70, 160, 120, 400]}
+  puente_ros_reducidos: {min: [-90, -40, -70, -150, -115, -300], max: [90, 60, 50, 150, 115, 300]}
+angle_unit: rad                          # controlador/RWS/socket en deg -> se convierte en el borde
+length_unit: m                           # controlador en mm
+rpy_convention: null                     # no se usa RPY; orientaciones como cuaternion ABB [q1..q4]=[w,x,y,z]
+quaternion_convention: wxyz (ABB)
+jacobian_convention: geometrico, [v; w] (lineal arriba), expresado en base_link, punto = TCP
+record_status: partially_verified        # modelo propio vs URDF verificado; vs controlador real PENDIENTE (Gate 2 lab)
